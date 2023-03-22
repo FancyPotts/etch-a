@@ -1,12 +1,14 @@
 const default_size = 16
 const container = document.getElementById('grid-container');
-const btn32 = document.getElementById('grid32');
-const btn50 = document.getElementById('grid50');
 const resetBtn = document.getElementById('reset')
 
-btn32.addEventListener('click', function(){ grid(32);});
-btn50.addEventListener('click', function(){ grid(50);});
+const changeSize = document.getElementById('change');
+
 resetBtn.addEventListener('click', function(){ grid(default_size);});
+changeSize.addEventListener('click', function(){ 
+    let sizeInput = document.getElementById('size').value;
+    grid(sizeInput)
+});
 
 
 function grid(size) {
