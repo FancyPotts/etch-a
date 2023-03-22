@@ -4,31 +4,6 @@
     width: 500px;
 }
 
-/* #grid-container.grid8{
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-}
-
-#grid-container.grid16 {
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-} */
-
-#grid-container.grid32 {
-    grid-template-columns: repeat(32, 1fr);
-    grid-template-rows: repeat(32, 1fr);
-}
-
-/* #grid-container.grid64 {
-    grid-template-columns: repeat(64, 1fr);
-    grid-template-rows: repeat(64, 1fr);
-}
-
-#grid-container.grid128 {
-    grid-template-columns: repeat(128, 1fr);
-    grid-template-rows: repeat(128, 1fr); */
-/* } */
-
 .grid-item {
     border: .01px solid black;
 }
