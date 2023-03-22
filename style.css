@@ -1,15 +1,37 @@
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(32, 1fr);
-    grid-template-rows: repeat(32, 1fr);
-    gap: 1px; 
     height: 500px;
     width: 500px;
     border: 1px solid red;
     padding: 2px;
 }
 
+/* #grid-container.grid8{
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+#grid-container.grid16 {
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+} */
+
+#grid-container.grid32 {
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+}
+
+/* #grid-container.grid64 {
+    grid-template-columns: repeat(64, 1fr);
+    grid-template-rows: repeat(64, 1fr);
+}
+
+#grid-container.grid128 {
+    grid-template-columns: repeat(128, 1fr);
+    grid-template-rows: repeat(128, 1fr); */
+/* } */
+
 .grid-item {
     background-color: brown;
-    border: 1px solid black;
+    border: .1px solid black;
 }

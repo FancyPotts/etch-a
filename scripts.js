@@ -5,3 +5,9 @@ for (i = 0; i < 1024; i++) {
     gridItem.classList.add('grid-item');
     container.appendChild(gridItem);
 }
+
+const onGrid = document.querySelector("div");
+
+onGrid.addEventListener("mouseover", (event) => {
+  console.log("mouseover event");
+});
