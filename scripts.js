@@ -4,10 +4,11 @@ for (i = 0; i < 1024; i++) {
     const gridItem = document.createElement('div');
     gridItem.classList.add('grid-item');
     container.appendChild(gridItem);
+    gridItem.addEventListener("mouseover", function() {
+        gridItem.classList.add('black');
+    })
 }
 
 const onGrid = document.querySelector("div");
 
-onGrid.addEventListener("mouseover", (event) => {
-  console.log("mouseover event");
-});
+;
