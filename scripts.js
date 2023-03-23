@@ -1,9 +1,7 @@
-const default_size = 16;
+const defaultSize = 16;
 const container = document.getElementById("grid-container");
 const resetBtn = document.getElementById("reset");
 const changeSize = document.getElementById("change");
-const placeHolder = document.getElementById("size").placeholder
-
 
 function grid(size) {
   while (container.firstChild) {
@@ -23,7 +21,7 @@ function grid(size) {
 }
 
 resetBtn.addEventListener("click", function () {
-  grid(default_size);
+  grid(defaultSize);
   document.getElementById("size").value = "";
   document.getElementById("size").placeholder = "Grid reset to default"
 });
@@ -36,10 +34,10 @@ changeSize.addEventListener("click", function () {
   } else {
     grid(sizeInput);
     document.getElementById("size").value = "";
-    document.getElementById("size").placeholder = `Grid is set to ${sizeInput}x${sizeInput}`
+    document.getElementById("size").placeholder = `Grid set to ${sizeInput}x${sizeInput}`
   }
 });
 
 window.onload = () => {
-  grid(default_size);
+  grid(defaultSize);
 };
