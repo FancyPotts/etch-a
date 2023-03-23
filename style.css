@@ -2,10 +2,26 @@
     display: grid;
     height: 500px;
     width: 500px;
+    margin-bottom: .5rem;
+    border: 2px solid black;
+}
+
+body {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+div.control {
+    diplay: inline-flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .grid-item {
-    border: .01px solid black;
+}
+
+.border {
+    border: 1px solid black;
 }
 
 .grid-item.black {
