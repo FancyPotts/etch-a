@@ -3,7 +3,7 @@
     height: 500px;
     width: 500px;
     margin-bottom: .5rem;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 body {
@@ -11,10 +11,20 @@ body {
     flex-direction: column;
 }
 
-div.control {
-    diplay: inline-flex;
+legend {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div#control {
+    display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-content: right;
+    flex: 1;
+    justify-content: right;
+}
+
+fieldset {
+    border: 2px solid black;
 }
 
 .grid-item {
